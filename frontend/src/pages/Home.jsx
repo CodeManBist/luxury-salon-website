@@ -7,6 +7,7 @@ import ScienceArt from '../components/home/ScienceArt';
 import Testimonials from '../components/home/Testimonials';
 import Gallery from '../components/home/Gallery';
 import CTA from '../components/home/CTA';
+import Footer from '../components/common/Footer';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Testimonials />
         <Gallery />
         <CTA />
+        <Footer />
     </>
   )
 }
