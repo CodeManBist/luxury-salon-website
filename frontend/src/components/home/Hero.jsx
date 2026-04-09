@@ -8,13 +8,13 @@ const Hero = () => {
 
       {/* Background Image */}
       <img
-        src="/salon.jpg"
-        alt="Salon"
+        src="/hero_image.png"
+        alt="hero background image"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.88)_0%,rgba(255,255,255,0.65)_30%,rgba(255,255,255,0.25)_55%,rgba(255,255,255,0)_75%)]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(251,249,245,1)_0%,rgba(251,249,245,0.6)_50%,rgba(251,249,245,0)_100%)]"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-6 md:px-10 w-full">

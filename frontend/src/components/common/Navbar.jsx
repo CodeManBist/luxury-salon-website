@@ -14,7 +14,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full bg-white px-6 py-4 flex items-center justify-between z-50 border-b border-[#E5E7EB]">
+    <nav className="w-full bg-white px-6 py-4 flex items-center justify-between z-50 sticky top-0">
 
       {/* Logo */}
       <h1 className="text-[24px] font-playfair italic text-[#1C1917] font-semibold cursor-pointer">
@@ -60,7 +60,7 @@ const Navbar = () => {
         }`}
       >
         {/* 🔥 Top Bar (Logo + Close) */}
-        <div className="flex items-center justify-between p-4 border-b border-[#E5E7EB]">
+        <div className="flex items-center justify-between p-4 border-b border-[#F3F4F6]">
           <h1 className="text-lg font-playfair italic text-[#1C1917] font-semibold cursor-pointer">
             Honeycombs
           </h1>
