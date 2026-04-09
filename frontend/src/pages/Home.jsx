@@ -6,6 +6,7 @@ import Features from '../components/home/Features';
 import ScienceArt from '../components/home/ScienceArt';
 import Testimonials from '../components/home/Testimonials';
 import Gallery from '../components/home/Gallery';
+import CTA from '../components/home/CTA';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <ScienceArt />
         <Testimonials />
         <Gallery />
+        <CTA />
     </>
   )
 }
