@@ -2,14 +2,14 @@ import React from 'react'
 import Navbar from '../components/common/Navbar'
 import Footer from '../components/common/Footer'
 
-const About = () => {
+const Services = () => {
   return (
     <>
     <Navbar />
-    About Page
+    Service Page
     <Footer />
     </>
   )
 }
 
-export default About
+export default Services
