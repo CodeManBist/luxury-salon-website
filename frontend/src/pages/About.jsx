@@ -4,6 +4,7 @@ import Footer from '../components/common/Footer'
 import Hero from '../components/about/Hero'
 import Philosophy from '../components/about/Philosophy'
 import AboutStory from '../components/about/AboutStory'
+import Team from '../components/about/Team'
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
     <Hero />
     <Philosophy />
     <AboutStory />
+    <Team />
     <Footer />
     </>
   )
