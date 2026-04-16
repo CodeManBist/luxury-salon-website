@@ -1,9 +1,23 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import SectionBlock from "../ui/SectionBlock";
+
+const standards = [
+  {
+    title: "Advanced Scalp Diagnosis",
+    description: "Using digital analysis to recommend the perfect ritual.",
+    descriptionClassName: "mt-[3px] text-xs text-[#4D4635]",
+  },
+  {
+    title: "Precision Color Chemistry",
+    description: "Custom-mixed ammonia-free dyes for vibrant, lasting results.",
+    descriptionClassName: "mt-[3px] text-xs text-[#4D4635]",
+  },
+];
 
 const ScienceArt = () => {
   return (
-    <section className="w-full bg-[#FBF9F5] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
+    <SectionBlock className="w-full bg-[#FBF9F5] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
       
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         
@@ -60,35 +74,25 @@ const ScienceArt = () => {
 
           {/* Features */}
           <div className="space-y-4">
-            
-            <div className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-[#735C00] mt-1" />
-              <div>
-                <p className="text-sm font-bold text-[#1B1C1A]">
-                  Advanced Scalp Diagnosis
-                </p>
-                <p className="mt-[3px]text-xs text-[#4D4635]">
-                  Using digital analysis to recommend the perfect ritual.
-                </p>
-              </div>
-            </div>
 
-            <div className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-[#735C00] mt-1" />
-              <div>
-                <p className="text-sm font-bold text-[#1B1C1A]">
-                  Precision Color Chemistry
-                </p>
-                <p className="mt-[3px] text-xs text-[#4D4635]">
-                  Custom-mixed ammonia-free dyes for vibrant, lasting results.
-                </p>
+            {standards.map((standard) => (
+              <div key={standard.title} className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-[#735C00] mt-1" />
+                <div>
+                  <p className="text-sm font-bold text-[#1B1C1A]">
+                    {standard.title}
+                  </p>
+                  <p className={standard.descriptionClassName}>
+                    {standard.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
 
           </div>
         </div>
       </div>
-    </section>
+    </SectionBlock>
   );
 };
 

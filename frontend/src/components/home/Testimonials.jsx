@@ -1,4 +1,6 @@
 import React from "react";
+import SectionBlock from "../ui/SectionBlock";
+import SectionHeader from "../ui/SectionHeader";
 
 const testimonials = [
   {
@@ -23,15 +25,17 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#F5F3EF] py-12 sm:py-16 px-4 sm:px-6 md:px-10">
+    <SectionBlock className="bg-[#F5F3EF] py-12 sm:py-16 px-4 sm:px-6 md:px-10">
       
       {/* Heading */}
-      <div className="text-center mb-10 sm:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#1B1C1A]">
-          Client Stories
-        </h2>
+      <SectionHeader
+        align="center"
+        containerClassName="mb-10 sm:mb-12"
+        title="Client Stories"
+        titleClassName="text-2xl sm:text-3xl md:text-4xl font-medium text-[#1B1C1A]"
+      >
         <div className="w-14 h-[2px] bg-yellow-500 mx-auto mt-3 rounded-full"></div>
-      </div>
+      </SectionHeader>
 
       {/* Cards */}
       <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -72,7 +76,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionBlock>
   );
 };
 

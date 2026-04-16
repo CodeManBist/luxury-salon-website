@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from '../components/common/Navbar'
-import Footer from '../components/common/Footer'
+import PageLayout from '../components/common/PageLayout'
 import Hero from '../components/about/Hero'
 import Philosophy from '../components/about/Philosophy'
 import AboutStory from '../components/about/AboutStory'
@@ -9,15 +8,13 @@ import CTA from '../components/about/CTA'
 
 const About = () => {
   return (
-    <>
-    <Navbar />
+    <PageLayout>
     <Hero />
     <Philosophy />
     <AboutStory />
     <Team />
     <CTA />
-    <Footer />
-    </>
+    </PageLayout>
   )
 }
 

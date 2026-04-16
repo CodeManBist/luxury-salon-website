@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from "../components/common/Navbar";
+import PageLayout from "../components/common/PageLayout";
 import Hero from '../components/home/Hero';
 import CuratedExperiences from '../components/home/CuratedExperiences';
 import Features from '../components/home/Features';
@@ -7,12 +7,10 @@ import ScienceArt from '../components/home/ScienceArt';
 import Testimonials from '../components/home/Testimonials';
 import Gallery from '../components/home/Gallery';
 import CTA from '../components/home/CTA';
-import Footer from '../components/common/Footer';
 
 const Home = () => {
   return (
-    <>
-        <Navbar />
+    <PageLayout>
         <Hero />
         <CuratedExperiences />
         <Features />
@@ -20,8 +18,7 @@ const Home = () => {
         <Testimonials />
         <Gallery />
         <CTA />
-        <Footer />
-    </>
+    </PageLayout>
   )
 }
 

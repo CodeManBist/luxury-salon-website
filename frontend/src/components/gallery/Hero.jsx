@@ -1,8 +1,9 @@
 import React from "react";
+import SectionBlock from "../ui/SectionBlock";
 
 const Hero = () => {
   return (
-    <section className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 pt-10 md:pt-14 lg:pt-16">
+    <SectionBlock className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 pt-10 md:pt-14 lg:pt-16">
       
       {/* Label */}
       <p className="text-[10px] tracking-[0.3em] text-[#a38b5f] uppercase mb-4">
@@ -31,7 +32,7 @@ const Hero = () => {
         of our studio.
       </p>
 
-    </section>
+    </SectionBlock>
   );
 };
 

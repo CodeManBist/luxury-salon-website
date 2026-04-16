@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SectionBlock from "../ui/SectionBlock";
+import ImageCard from "../ui/ImageCard";
 
 const categories = [
   "All Works",
@@ -50,7 +52,7 @@ const GallerySection = () => {
       : images.filter((img) => img.category === active);
 
   return (
-    <section className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 mt-10">
+    <SectionBlock className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 mt-10">
 
       {/* 🔹 Filters */}
       <div className="relative mb-8">
@@ -86,20 +88,17 @@ const GallerySection = () => {
         "
       >
         {filtered.map((img) => (
-          <div
+          <ImageCard
             key={img.id}
-            className="overflow-hidden rounded-2xl group"
-          >
-            <img
-              src={img.src}
-              alt=""
-              className="w-full h-[260px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover transition duration-500 group-hover:scale-105"
-            />
-          </div>
+            src={img.src}
+            alt=""
+            wrapperClassName="overflow-hidden rounded-2xl group"
+            imageClassName="w-full h-[260px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover transition duration-500 group-hover:scale-105"
+          />
         ))}
       </div>
 
-    </section>
+    </SectionBlock>
   );
 };
 
