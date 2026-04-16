@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../components/common/Navbar'
-import Footer from '../components/common/Footer'
+import PageLayout from '../components/common/PageLayout'
+import Hero from '../components/contact/Hero'
+import ContactSection from '../components/contact/ContactSection'
 
 const Contact = () => {
   return (
-    <>
-    <Navbar />
-    Contact Page
-    <Footer />
-    </>
+    <PageLayout>
+      <Hero />
+      <ContactSection />
+    </PageLayout>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import SectionBlock from '../ui/SectionBlock';
 import SectionHeader from '../ui/SectionHeader';
 import ImageCard from '../ui/ImageCard';
@@ -11,6 +12,8 @@ const services = [
 ];
 
 const CuratedExperiences = () => {
+  const navigate = useNavigate();
+
   return (
     <SectionBlock className="w-full bg-[#faf9f5] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
       
@@ -24,7 +27,7 @@ const CuratedExperiences = () => {
           descriptionClassName="text-xs sm:text-sm text-[#4D4635] max-w-sm sm:max-w-md leading-relaxed"
         />
 
-        <button className="text-[10px] sm:text-xs tracking-[0.2em] text-[#735C00] border-b border-[#D4AF37] pb-1 w-fit font-bold">
+        <button type="button" onClick={() => navigate('/services')} className="text-[10px] sm:text-xs tracking-[0.2em] text-[#735C00] border-b border-[#D4AF37] pb-1 w-fit font-bold">
           VIEW FULL MENU
         </button>
       </div>

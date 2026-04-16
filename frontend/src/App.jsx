@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact";;
+import Contact from "./pages/Contact";
 import About from "./pages/About";
 
 function App() {

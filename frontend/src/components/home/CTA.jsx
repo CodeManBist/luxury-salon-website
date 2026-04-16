@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-[#735C00] py-16 sm:py-20 px-4 sm:px-6 md:px-10 text-center">
       
@@ -22,12 +25,12 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
 
           {/* Primary Button */}
-          <button className="bg-[#FBF9F5] text-[#735C00] px-6 sm:px-8 py-3 rounded-full text-sm font-semibold tracking-wide hover:opacity-90 transition">
+          <button type="button" onClick={() => navigate("/contact")} className="bg-[#FBF9F5] text-[#735C00] px-6 sm:px-8 py-3 rounded-full text-sm font-semibold tracking-wide hover:opacity-90 transition">
             BOOK YOUR APPOINTMENT TODAY
           </button>
 
           {/* Secondary Button */}
-          <button className="border border-[#D4AF37] text-[#ffffff] px-6 sm:px-8 py-3 rounded-full text-sm font-semibold tracking-wide hover:bg-white hover:text-[#735C00] transition">
+          <button type="button" onClick={() => navigate("/services")} className="border border-[#D4AF37] text-[#ffffff] px-6 sm:px-8 py-3 rounded-full text-sm font-semibold tracking-wide hover:bg-white hover:text-[#735C00] transition">
             VIEW PRICING
           </button>
 

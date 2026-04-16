@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,10 +27,10 @@ const Footer = () => {
             QUICK LINKS
           </h4>
           <ul className="space-y-2 text-sm">
-            <li className="hover:underline cursor-pointer">Privacy Policy</li>
-            <li className="hover:underline cursor-pointer">Terms of Service</li>
-            <li className="hover:underline cursor-pointer">Contact Us</li>
-            <li className="hover:underline cursor-pointer">Careers</li>
+            <li><Link to="/contact?topic=privacy" className="hover:underline">Privacy Policy</Link></li>
+            <li><Link to="/contact?topic=terms" className="hover:underline">Terms of Service</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
+            <li><a href="mailto:careers@honeycombs.com" className="hover:underline">Careers</a></li>
           </ul>
         </div>
 
@@ -58,8 +59,12 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-[#7a5c00]">
-            <FaInstagram className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
-            <Image className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <FaInstagram className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+            </a>
+            <a href="https://maps.google.com/?q=Honeycombs+Akshayanagar" target="_blank" rel="noreferrer" aria-label="Location map">
+              <Image className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+            </a>
            </div>
         </div>
 

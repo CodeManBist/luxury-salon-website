@@ -1,14 +1,12 @@
 import React from 'react'
-import Navbar from '../components/common/Navbar'
-import Footer from '../components/common/Footer'
+import PageLayout from '../components/common/PageLayout'
+import ServicesTop from '../components/services/ServicesTop'
 
 const Services = () => {
   return (
-    <>
-    <Navbar />
-    Service Page
-    <Footer />
-    </>
+    <PageLayout>
+    <ServicesTop />
+    </PageLayout>
   )
 }
 

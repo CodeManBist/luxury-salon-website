@@ -1,8 +1,11 @@
 import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative w-full min-h-[100vh] flex items-center overflow-hidden">
 
@@ -57,7 +60,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 mt-6 sm:mt-8">
 
           {/* Main CTA */}
-          <Button size="md" className="w-full sm:w-auto">
+          <Button size="md" className="w-full sm:w-auto" onClick={() => navigate("/contact")}>
             BOOK APPOINTMENT
           </Button>
 
@@ -66,6 +69,7 @@ const Hero = () => {
             variant="secondary"
             size="sm"
             className="flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start"
+            onClick={() => window.open("tel:+919876543210", "_self")}
           >
             <Phone size={14} />
             Call Now
@@ -76,6 +80,7 @@ const Hero = () => {
             variant="whatsapp"
             size="sm"
             className="flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start"
+            onClick={() => window.open("https://wa.me/919876543210", "_blank")}
           >
             <MessageCircle size={14} />
             WhatsApp

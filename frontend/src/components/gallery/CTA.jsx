@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 py-16">
       
@@ -21,12 +24,12 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
           
           {/* Primary */}
-          <button className="w-full sm:w-auto bg-[#7c5c12] text-white px-6 sm:px-8 py-3 rounded-full text-sm font-medium">
+          <button type="button" onClick={() => navigate("/contact")} className="w-full sm:w-auto bg-[#7c5c12] text-white px-6 sm:px-8 py-3 rounded-full text-sm font-medium">
             BOOK YOUR VISIT
           </button>
 
           {/* Secondary */}
-          <button className="w-full sm:w-auto border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-full text-sm font-medium">
+          <button type="button" onClick={() => navigate("/about")} className="w-full sm:w-auto border border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-full text-sm font-medium">
             MEET THE STYLISTS
           </button>
 
