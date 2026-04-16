@@ -10,18 +10,18 @@ const Hero = () => {
         <div className="max-w-xl">
 
           {/* Label */}
-          <p className="text-[11px] tracking-[0.25em] text-gray-400 uppercase mb-6">
+          <p className="text-[11px] tracking-[0.25em] text-[#67645C] bg-[#e6e2d7] inline-block uppercase mb-6 px-2 py-0.5 rounded-full">
             Established 2012
           </p>
 
           {/* Heading */}
-          <h1 className="font-serif leading-[1.05] text-gray-900">
+          <h1 className="font-serif leading-[1.05] text-[#1B1C1A]">
 
             <span className="block text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium">
               Crafting Beauty,
             </span>
 
-            <span className="block text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-[#7c5c12]">
+            <span className="block text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-[#735C00]">
               One Soul
             </span>
 
@@ -65,7 +65,7 @@ const Hero = () => {
                 className="
                 absolute
                 -top-10 sm:-top-12 md:-top-20
-                left-1/2 -translate-x-1/2
+                left-1/9 -translate-x-1/2
 
                 w-[100px] h-[130px]
                 sm:w-[130px] sm:h-[160px]
