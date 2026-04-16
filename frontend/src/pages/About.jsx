@@ -5,6 +5,7 @@ import Hero from '../components/about/Hero'
 import Philosophy from '../components/about/Philosophy'
 import AboutStory from '../components/about/AboutStory'
 import Team from '../components/about/Team'
+import CTA from '../components/about/CTA'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
     <Philosophy />
     <AboutStory />
     <Team />
+    <CTA />
     <Footer />
     </>
   )
