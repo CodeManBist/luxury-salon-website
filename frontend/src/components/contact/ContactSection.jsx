@@ -5,6 +5,9 @@ import SectionHeader from "../ui/SectionHeader";
 const mapQuery = encodeURIComponent("1224 Amber Grove, Suite 400, San Francisco, CA 94103");
 const mapSrc = `https://www.google.com/maps?q=${mapQuery}&z=14&output=embed`;
 const mapsLink = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+const phoneNumber = "+919876543210";
+const whatsappMessage = encodeURIComponent("Hi, I want to book an appointment.");
+const whatsappLink = `https://wa.me/${phoneNumber.replace("+", "")}?text=${whatsappMessage}`;
 
 const ContactSection = () => {
   return (
@@ -106,15 +109,23 @@ const ContactSection = () => {
             </div>
 
             {/* Contact */}
-            <div className="flex gap-3">
+            <div className="space-y-2">
 
-              <a href="tel:+919876543210" className="flex-1 border rounded-full py-2 text-sm inline-flex items-center justify-center">
-                Call Us
-              </a>
+              <div className="flex gap-3">
 
-              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="flex-1 bg-green-500 text-white rounded-full py-2 text-sm inline-flex items-center justify-center">
-                WhatsApp
-              </a>
+                <a href={`tel:${phoneNumber}`} className="flex-1 border rounded-full py-2 text-sm inline-flex items-center justify-center">
+                  Call Us
+                </a>
+
+                <a href={whatsappLink} target="_blank" rel="noreferrer" className="flex-1 bg-green-500 text-white rounded-full py-2 text-sm inline-flex items-center justify-center">
+                  WhatsApp
+                </a>
+
+              </div>
+
+              <p className="text-xs text-gray-500 text-center">
+                If calling does not open, dial {phoneNumber}.
+              </p>
 
             </div>
 
