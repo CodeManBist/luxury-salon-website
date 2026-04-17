@@ -5,7 +5,7 @@ import SectionHeader from "../ui/SectionHeader";
 const mapQuery = encodeURIComponent("1224 Amber Grove, Suite 400, San Francisco, CA 94103");
 const mapSrc = `https://www.google.com/maps?q=${mapQuery}&z=14&output=embed`;
 const mapsLink = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
-const phoneNumber = "+919876543210";
+const phoneNumber = "+919902917305";
 const whatsappMessage = encodeURIComponent("Hi, I want to book an appointment.");
 const whatsappLink = `https://wa.me/${phoneNumber.replace("+", "")}?text=${whatsappMessage}`;
 
