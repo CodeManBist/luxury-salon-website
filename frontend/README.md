@@ -26,7 +26,7 @@ The static output is generated in `dist/`.
 
 ## Vercel deployment
 
-This project is deployment-ready for Vercel with SPA routing support.
+This project is deployment-ready for Vercel with SPA routing support
 
 ### Vercel settings
 
